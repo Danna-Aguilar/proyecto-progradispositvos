@@ -13,6 +13,7 @@
 		3D3A7D7C28C6496A00ED4E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3A7D7B28C6496A00ED4E05 /* Assets.xcassets */; };
 		3D3A7D7F28C6496A00ED4E05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3A7D7D28C6496A00ED4E05 /* LaunchScreen.storyboard */; };
 		3D3A7D8728C64C9300ED4E05 /* Midnight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3A7D8628C64C9300ED4E05 /* Midnight.ttf */; };
+		3DCFF90D28CA7AEE0002A078 /* ARCO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DCFF90C28CA7AEE0002A078 /* ARCO.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3D3A7D7E28C6496A00ED4E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3A7D8028C6496A00ED4E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3A7D8628C64C9300ED4E05 /* Midnight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Midnight.ttf; sourceTree = "<group>"; };
+		3DCFF90C28CA7AEE0002A078 /* ARCO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARCO.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		3D3A7D7328C6493D00ED4E05 /* PROEYCTO */ = {
 			isa = PBXGroup;
 			children = (
+				3DCFF90C28CA7AEE0002A078 /* ARCO.ttf */,
 				3D3A7D8628C64C9300ED4E05 /* Midnight.ttf */,
 				3D3A7D7428C6493D00ED4E05 /* AppDelegate.swift */,
 				3D3A7D7628C6493D00ED4E05 /* ViewController.swift */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D3A7D8728C64C9300ED4E05 /* Midnight.ttf in Resources */,
+				3DCFF90D28CA7AEE0002A078 /* ARCO.ttf in Resources */,
 				3D3A7D7F28C6496A00ED4E05 /* LaunchScreen.storyboard in Resources */,
 				3D3A7D7C28C6496A00ED4E05 /* Assets.xcassets in Resources */,
 				3D3A7D7A28C6493E00ED4E05 /* Main.storyboard in Resources */,
