@@ -27,8 +27,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACKGROUND" translatesAutoresizingMaskIntoConstraints="NO" id="8uv-if-z9g">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j62-FX-neE" userLabel="juice">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JUGO_1" translatesAutoresizingMaskIntoConstraints="NO" id="j62-FX-neE" userLabel="juice">
                                 <rect key="frame" x="223.66666666666663" y="414" width="131.33333333333337" height="122"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cW2-6c-fEe" appends="YES" id="FEB-gu-UPC"/>
+                                </connections>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="242" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3yO-Jb-67R">
                                 <rect key="frame" x="20" y="122" width="335" height="203"/>
@@ -37,14 +41,18 @@
                                 <rect key="frame" x="20" y="98" width="335" height="4"/>
                                 <color key="backgroundColor" red="0.28235294117647058" green="0.15686274509803921" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drink's" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIj-bU-QWk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beverages" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIj-bU-QWk">
                                 <rect key="frame" x="8" y="44" width="359" height="35"/>
                                 <fontDescription key="fontDescription" name="MidnightRegular" family="Midnight" pointSize="36"/>
                                 <color key="textColor" red="0.28627450980392155" green="0.15686274509803921" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-n5-r9G" userLabel="soft">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COCA_1" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-n5-r9G" userLabel="soft">
                                 <rect key="frame" x="108.66666666666667" y="586" width="131.33333333333331" height="121.66666666666663"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="LbN-ad-2nX" appends="YES" id="WGS-zI-kp5"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="choose your drink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtO-ic-mYe">
                                 <rect key="frame" x="8" y="365" width="359" height="24"/>
@@ -52,9 +60,12 @@
                                 <color key="textColor" red="0.28235294119999998" green="0.15686274510000001" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ymv-G7-Wnk" userLabel="coffe">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COFFE_1" translatesAutoresizingMaskIntoConstraints="NO" id="ymv-G7-Wnk" userLabel="coffe">
                                 <rect key="frame" x="20" y="414" width="131.33333333333334" height="122"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nnU-Lh-H2p" appends="YES" id="PjV-Cw-jMO"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -248,13 +259,37 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="imgCoca" destination="bx3-n5-r9G" id="SmU-HW-TSM"/>
+                        <outlet property="imgCoffe" destination="ymv-G7-Wnk" id="yXD-sx-qfD"/>
+                        <outlet property="imgJuice" destination="j62-FX-neE" id="EUc-ka-dUi"/>
+                        <outlet property="lblSeleccion" destination="QtO-ic-mYe" id="i3T-tD-d4F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nnU-Lh-H2p" userLabel="Tap Coffe">
+                    <connections>
+                        <action selector="doTapCoffer:" destination="BYZ-38-t0r" id="mQS-Z5-RSa"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="cW2-6c-fEe" userLabel="Tap Juice">
+                    <connections>
+                        <action selector="doTapJuice:" destination="BYZ-38-t0r" id="VmX-G1-rrd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="LbN-ad-2nX" userLabel="Tap Coca">
+                    <connections>
+                        <action selector="doTapCoca:" destination="BYZ-38-t0r" id="YaC-Z3-Eh9"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="117.48768472906404" y="117.59999999999999"/>
         </scene>
     </scenes>
     <resources>
         <image name="BACKGROUND" width="1562" height="3383"/>
+        <image name="COCA_1" width="1024" height="1024"/>
+        <image name="COFFE_1" width="1024" height="1024"/>
+        <image name="JUGO_1" width="1024" height="1024"/>
     </resources>
 </document>
