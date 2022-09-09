@@ -34,7 +34,7 @@
                                     <outletCollection property="gestureRecognizers" destination="cW2-6c-fEe" appends="YES" id="FEB-gu-UPC"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="242" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3yO-Jb-67R">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="242" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3yO-Jb-67R">
                                 <rect key="frame" x="20" y="122" width="335" height="203"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMB-eq-iWH" userLabel="barra">
@@ -260,6 +260,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="imgArriba" destination="3yO-Jb-67R" id="w41-go-euT"/>
                         <outlet property="imgCoca" destination="bx3-n5-r9G" id="SmU-HW-TSM"/>
                         <outlet property="imgCoffe" destination="ymv-G7-Wnk" id="yXD-sx-qfD"/>
                         <outlet property="imgJuice" destination="j62-FX-neE" id="EUc-ka-dUi"/>

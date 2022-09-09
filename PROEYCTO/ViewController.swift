@@ -19,7 +19,9 @@ class ViewController: UIViewController {
     var secuenciaCoffe1 : [UIImage] = []
     var secuenciaJuice1: [UIImage] = []
     var secuenciaCoca1: [UIImage] = []
+    var secuenciaArriba : [UIImage] = []
 
+    @IBOutlet weak var imgArriba: UIImageView!
     @IBOutlet weak var lblSeleccion: UILabel!
     @IBOutlet weak var imgCoffe: UIImageView!
     @IBOutlet weak var imgJuice: UIImageView!
@@ -83,6 +85,18 @@ class ViewController: UIViewController {
         }catch let error {
             print(error.localizedDescription)
         }
+        secuenciaArriba = []
+        for i in 1...5 {
+            let imagen = UIImage(named: "COFFE.2.\(i)")
+            secuenciaArriba.append(imagen!)
+        }
+        
+        //establecer la secuencia al image view
+        imgArriba.animationImages = secuenciaArriba
+        imgArriba.animationDuration = 2.0
+        imgArriba.startAnimating()
+        
+        
     }
     @IBAction func doTapJuice(_ sender: Any) {
         lblSeleccion.text = "Juice"
@@ -92,6 +106,17 @@ class ViewController: UIViewController {
         }catch let error {
             print(error.localizedDescription)
         }
+        secuenciaArriba = []
+
+        for i in 1...5 {
+            let imagen = UIImage(named: "JUGO.2.\(i)")
+            secuenciaArriba.append(imagen!)
+        }
+        
+        //establecer la secuencia al image view
+        imgArriba.animationImages = secuenciaArriba
+        imgArriba.animationDuration = 2.0
+        imgArriba.startAnimating()
     }
     
     @IBAction func doTapCoca(_ sender: Any) {
@@ -102,6 +127,18 @@ class ViewController: UIViewController {
         }catch let error {
             print(error.localizedDescription)
         }
+        secuenciaArriba = []
+
+        for i in 1...5 {
+            let imagen = UIImage(named: "COCA.2.\(i)")
+            secuenciaArriba.append(imagen!)
+        }
+        
+        //establecer la secuencia al image view
+        imgArriba.animationImages = secuenciaArriba
+        imgArriba.animationDuration = 2.0
+        imgArriba.startAnimating()
+        
     }
 }
 
