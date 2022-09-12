@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     //reproductor
     var reproductorDrinks : AVAudioPlayer?
+    var reproductorMusica: AVAudioPlayer?
+    var url_musica: URL?
     var url_coffe : URL?
     var url_juice : URL?
     var url_soft : URL?
@@ -35,12 +37,23 @@ class ViewController: UIViewController {
         } catch let error {
             print(error.localizedDescription)
         }
+        do {
+            let url = Bundle.main.url(forResource: "preview", withExtension: "mp3")
+            reproductorMusica = try AVAudioPlayer(contentsOf: url!, fileTypeHint:  AVFileType.m4a.rawValue)
+            reproductorMusica?.volume = 0.2
+            reproductorMusica?.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
         //OBTENER URL DEL AUDIO
-        url_coffe = Bundle.main.url(forResource: "coffe", withExtension : "mp3")
         
-        url_juice = Bundle.main.url(forResource: "Juice", withExtension : "mp3")
+        url_musica = Bundle.main.url(forResource: "preview", withExtension : "mp3")
         
-        url_soft = Bundle.main.url(forResource: "soft drink", withExtension : "mp3")
+        url_coffe = Bundle.main.url(forResource: "Cofre", withExtension : "m4a")
+        
+        url_juice = Bundle.main.url(forResource: "Juice", withExtension : "m4a")
+        
+        url_soft = Bundle.main.url(forResource: "Soft", withExtension : "m4a")
         
         for i in 1...5 {
             let imagen = UIImage(named: "COFFE_\(i)")
@@ -81,6 +94,7 @@ class ViewController: UIViewController {
         lblSeleccion.text = "Coffe"
         do {
             reproductorDrinks = try AVAudioPlayer(contentsOf: url_coffe!, fileTypeHint: AVFileType.mp3.rawValue)
+            reproductorDrinks?.volume = 0.4
             reproductorDrinks?.play()
         }catch let error {
             print(error.localizedDescription)
@@ -102,6 +116,7 @@ class ViewController: UIViewController {
         lblSeleccion.text = "Juice"
         do {
             reproductorDrinks = try AVAudioPlayer(contentsOf: url_juice!, fileTypeHint: AVFileType.mp3.rawValue)
+            reproductorDrinks?.volume = 0.5
             reproductorDrinks?.play()
         }catch let error {
             print(error.localizedDescription)
@@ -123,6 +138,7 @@ class ViewController: UIViewController {
         lblSeleccion.text = "Soft Drink"
         do {
             reproductorDrinks = try AVAudioPlayer(contentsOf: url_soft!, fileTypeHint: AVFileType.mp3.rawValue)
+            reproductorDrinks?.volume = 0.4
             reproductorDrinks?.play()
         }catch let error {
             print(error.localizedDescription)
@@ -140,5 +156,7 @@ class ViewController: UIViewController {
         imgArriba.startAnimating()
         
     }
+    
+
 }
 

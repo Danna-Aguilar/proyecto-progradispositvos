@@ -16,6 +16,10 @@
 		3D3A7D7C28C6496A00ED4E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3A7D7B28C6496A00ED4E05 /* Assets.xcassets */; };
 		3D3A7D7F28C6496A00ED4E05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3A7D7D28C6496A00ED4E05 /* LaunchScreen.storyboard */; };
 		3D3A7D8728C64C9300ED4E05 /* Midnight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D3A7D8628C64C9300ED4E05 /* Midnight.ttf */; };
+		3D4D485F28CF7E3C00B9F2D0 /* preview.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3D4D485E28CF7E3C00B9F2D0 /* preview.mp3 */; };
+		3D4D486128CF855100B9F2D0 /* Soft.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3D4D486028CF855000B9F2D0 /* Soft.m4a */; };
+		3D4D486328CF855A00B9F2D0 /* Cofre.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3D4D486228CF855A00B9F2D0 /* Cofre.m4a */; };
+		3D4D486528CF856400B9F2D0 /* Juice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3D4D486428CF856400B9F2D0 /* Juice.m4a */; };
 		3DCFF90D28CA7AEE0002A078 /* ARCO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DCFF90C28CA7AEE0002A078 /* ARCO.ttf */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,10 @@
 		3D3A7D7E28C6496A00ED4E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3A7D8028C6496A00ED4E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3A7D8628C64C9300ED4E05 /* Midnight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Midnight.ttf; sourceTree = "<group>"; };
+		3D4D485E28CF7E3C00B9F2D0 /* preview.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = preview.mp3; sourceTree = "<group>"; };
+		3D4D486028CF855000B9F2D0 /* Soft.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Soft.m4a; sourceTree = "<group>"; };
+		3D4D486228CF855A00B9F2D0 /* Cofre.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cofre.m4a; sourceTree = "<group>"; };
+		3D4D486428CF856400B9F2D0 /* Juice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Juice.m4a; sourceTree = "<group>"; };
 		3DCFF90C28CA7AEE0002A078 /* ARCO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ARCO.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,12 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				3DCFF90C28CA7AEE0002A078 /* ARCO.ttf */,
+				3D4D485E28CF7E3C00B9F2D0 /* preview.mp3 */,
+				3D4D486028CF855000B9F2D0 /* Soft.m4a */,
 				3D24C57D28CB8918003E1367 /* Juice.mp3 */,
 				3D24C57B28CB8569003E1367 /* coffe.mp3 */,
 				3D24C57F28CB8920003E1367 /* soft drink.mp3 */,
 				3D3A7D8628C64C9300ED4E05 /* Midnight.ttf */,
 				3D3A7D7428C6493D00ED4E05 /* AppDelegate.swift */,
 				3D3A7D7628C6493D00ED4E05 /* ViewController.swift */,
+				3D4D486228CF855A00B9F2D0 /* Cofre.m4a */,
+				3D4D486428CF856400B9F2D0 /* Juice.m4a */,
 				3D3A7D7828C6493E00ED4E05 /* Main.storyboard */,
 				3D3A7D7B28C6496A00ED4E05 /* Assets.xcassets */,
 				3D3A7D7D28C6496A00ED4E05 /* LaunchScreen.storyboard */,
@@ -138,13 +150,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D24C58028CB8920003E1367 /* soft drink.mp3 in Resources */,
+				3D4D486528CF856400B9F2D0 /* Juice.m4a in Resources */,
 				3D24C57C28CB856E003E1367 /* coffe.mp3 in Resources */,
 				3D3A7D8728C64C9300ED4E05 /* Midnight.ttf in Resources */,
 				3DCFF90D28CA7AEE0002A078 /* ARCO.ttf in Resources */,
+				3D4D486128CF855100B9F2D0 /* Soft.m4a in Resources */,
 				3D3A7D7F28C6496A00ED4E05 /* LaunchScreen.storyboard in Resources */,
 				3D3A7D7C28C6496A00ED4E05 /* Assets.xcassets in Resources */,
+				3D4D486328CF855A00B9F2D0 /* Cofre.m4a in Resources */,
 				3D3A7D7A28C6493E00ED4E05 /* Main.storyboard in Resources */,
 				3D24C57E28CB8919003E1367 /* Juice.mp3 in Resources */,
+				3D4D485F28CF7E3C00B9F2D0 /* preview.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
